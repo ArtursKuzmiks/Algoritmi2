@@ -33,8 +33,12 @@ public class LD1111reb779 {
             return;
         }
         switch (met){
-            case 1: firstMethod(Arr);
-            case 2: secondMethod(Arr);
+            case 1: 
+                firstMethod(Arr);
+                break;
+            case 2: 
+                secondMethod(Arr);
+                break;
         }
 
         System.out.println("sorted:");
