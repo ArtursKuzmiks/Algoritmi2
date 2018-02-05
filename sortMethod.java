@@ -45,7 +45,7 @@ public class sortMethod {
         final int [] temparr = new int [count];
         System.arraycopy(Arr, 0, temparr, 0, Arr.length);
 
-        loop:for(;;) {
+        for(;;) {
             System.out.println();
             switch (met) {
                 case 1:
@@ -400,7 +400,7 @@ public class sortMethod {
             for(int i=0;i < gCnt;i++){
                 if (buf[i]<=buf[bmin])
                     bmin = i;
-            }    
+            }
             b[k]=buf[bmin];
             buf[bmin]=Integer.MAX_VALUE;
             min=gBorder[bmin][0];
