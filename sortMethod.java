@@ -397,13 +397,10 @@ public class sortMethod {
         int[] b=new int[a.length];
 
         for(int k=0;k<b.length;k++){
-            for(int i=0;i<gCnt;i++) {
-                int temp=buf[i];
-                for (int j = 0; j < gCnt - 1; j++) {
-                    if (temp < buf[j + 1] && temp<buf[bmin])
-                        bmin = i;
-                }
-            }
+            for(int i=0;i < gCnt;i++){
+                if (buf[i]<=buf[bmin])
+                    bmin = i;
+            }    
             b[k]=buf[bmin];
             buf[bmin]=Integer.MAX_VALUE;
             min=gBorder[bmin][0];
